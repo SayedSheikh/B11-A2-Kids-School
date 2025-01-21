@@ -91,6 +91,7 @@ header,
 .navbar ul li {
   list-style: none;
 }
+
 header .icon i {
   font-size: 2rem;
   cursor: pointer;
@@ -104,6 +105,9 @@ header a {
   font-family: Quicksand;
   font-size: 20px;
 
+  font-weight: 500;
+}
+.navbar ul > li:first-child a {
   font-weight: 700;
 }
 
@@ -132,6 +136,19 @@ header a {
 .banner-btn button {
   background-color: rgba(17, 17, 17, 1);
   color: white;
+}
+.banner-btn {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+}
+.mark {
+  width: 200px;
+  font-family: Raleway;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: red;
 }
 .banner-img img {
   width: 100%;
@@ -418,6 +435,13 @@ footer ul {
   .hero h1 {
     font-size: 2rem;
     line-height: normal;
+  }
+  .banner-btn {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .mark {
+    margin: 0 auto;
   }
   .icons {
     display: none;
