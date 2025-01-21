@@ -98,7 +98,7 @@ header .icon i {
 header .icon {
   display: none;
 }
-a {
+header a {
   text-decoration: none;
 
   font-family: Quicksand;
@@ -200,6 +200,8 @@ a {
 .card a {
   font-size: 0.9rem;
   font-weight: 700;
+  text-decoration: none;
+  font-family: Quicksand;
 }
 .card1 a {
   color: #64c8ff;
@@ -313,6 +315,81 @@ a {
   text-align: center;
 }
 
+/* footer style */
+
+footer {
+  background-color: #01acfd;
+  font-family: Quicksand;
+}
+footer h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 38px;
+}
+footer .container {
+  max-width: 1070px;
+  margin: 0 auto;
+  color: white;
+
+  padding: 120px 0 170px 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+footer ul li {
+  list-style: none;
+}
+footer .info p {
+  max-width: 400px;
+
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 35px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo-section {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.logo-2 {
+  width: 82px;
+}
+.logo-2 img {
+  width: 100%;
+  cursor: pointer;
+}
+
+footer h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.social-links {
+  display: flex;
+  gap: 10px;
+}
+.social-links img {
+  width: 100%;
+  border-radius: 4px;
+}
+
 /* break points */
 @media screen and (max-width: 576px) {
   .curriculum-container,
@@ -361,11 +438,28 @@ a {
   }
   .stroy-card button {
     font-size: 0.5rem;
+    height: 22px;
+
+    position: absolute;
+    top: calc(-29px / 2);
   }
   .stroy-card h3 {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
+    line-height: 17px;
   }
   .stroy-card .story-description {
     padding: 0 23px 17px 22px;
+  }
+  .story-description h3 {
+    padding-top: 25px;
+  }
+  footer .container {
+    padding: 66px 20px 60px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .logo-section {
+    position: relative;
+    left: -5px;
   }
 }
