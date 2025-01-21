@@ -487,3 +487,89 @@ footer ul {
     left: -5px;
   }
 }
+
+/* for medium screen */
+
+@media screen and (min-width: 576px) and (max-width: 1024px) {
+  .curriculum,
+  .story-cards,
+  footer {
+    padding: 0 40px;
+  }
+  .navbar .btn,
+  .navbar .logo h3 {
+    display: none;
+  }
+  .navbar {
+    margin: 0;
+    padding: 20px 25px;
+    border-bottom: 0.5px solid #fea301;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    padding: 20px 16px;
+    text-align: center;
+    gap: 20px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+    line-height: normal;
+  }
+  .banner-btn {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .mark {
+    margin: 0 auto;
+  }
+  .icons {
+    display: none;
+  }
+  .cards-container {
+    flex-direction: column;
+  }
+  .curriculum h2 {
+    font-size: 1.5rem;
+    padding: 40px 0 20px 0;
+  }
+  .story-cards {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+  .bigger {
+    display: none;
+  }
+  .stroy-card button {
+    font-size: 0.5rem;
+    height: 22px;
+
+    position: absolute;
+    top: calc(-29px / 2);
+  }
+  .stroy-card h3 {
+    font-size: 0.5rem;
+    line-height: 17px;
+  }
+  .stroy-card .story-description {
+    padding: 0 23px 17px 22px;
+  }
+  .story-description h3 {
+    padding-top: 25px;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .logo-section {
+    justify-content: center;
+  }
+
+  .about ul {
+    align-items: center;
+  }
+  footer .container {
+    padding: 66px 20px 60px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
